@@ -1,0 +1,116 @@
+@import "agency";
+@import "animate";
+
+.admin-wrap{
+  padding-top:100px;
+}
+
+.wrap{
+  overflow:hidden;
+}
+
+header .intro-text .intro-lead-in{
+  font-size: 34px;
+}
+
+header .intro-text .intro-heading{
+  font-size: 50px;
+}
+#services{
+  .service-image{
+    text-align:center;
+    background-color: $theme-primary;
+    width: 112px;
+    height: 112px;
+    border-radius: 100%;
+    margin: 0 auto;
+    padding:15px;
+
+    position:relative;
+    img{
+      max-width:80%;
+      display:block;
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      margin: auto;
+    }
+  }
+}
+
+#portfolio .portfolio-item .portfolio-link{
+  height: 270px;
+  background-color: white;
+  overflow: hidden;
+  position:relative;
+  img{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+  }
+}
+
+#portfolio .portfolio-item .portfolio-caption p{
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+#portfolio .portfolio-item .portfolio-caption{
+  height: 129px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover{
+  z-index: 5;
+}
+
+.timeline > li .timeline-image{
+  img{
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+.team-member{
+  &-photo{
+    width: 230px;
+    height: 230px;
+    margin: 0 auto;
+    overflow:hidden;
+    border: 7px solid white;
+    border-radius:100%;
+    .img-circle{
+      border: none;
+      border-radius:0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.nav>li>a{
+  padding:10px;
+}
+
+@media screen and (max-width:1000px){
+  .navbar-brand{
+    padding: 10px 5px;
+    font-size: 21px !important;
+  }
+}
+
+
+@media screen and (max-width:768px){
+  #mainNav{
+    opacity:1 !important;
+    ul{
+      opacity:1 !important;
+      transform: translateX(0) !important;
+    }
+  }
+}
